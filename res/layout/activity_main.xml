@@ -4,16 +4,39 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/et_filePath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入存储位置" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="useCamera01"
+        android:text="拍照" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="useCamera02"
+        android:text="摄像" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pickPic"
+        android:text="选择图片" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pickVid"
+        android:text="选择视频" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="checkNetStatus"
         android:text="网络状态" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="useCamera"
-        android:text="摄像头" />
-
 </LinearLayout>
